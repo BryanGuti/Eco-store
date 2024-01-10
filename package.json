@@ -1,0 +1,13 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./src/assets/scss/:./src/assets/css/",
+    "pug": "pug --watch --pretty ./src/assets/pug/index.pug --out ./src/"
+  },
+  "keywords": [],
+  "author": "Bryan Gutierrez Alvarez <bryguti.alvarez@gmail.com>",
+  "license": "ISC"
+}

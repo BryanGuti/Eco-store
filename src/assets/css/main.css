@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 2rem;
+  align-items: center;
+}
+.header .logo__link {
+  font-size: 3rem;
+  color: #7c6a0a;
+  font-weight: bold;
+}
+.header .navbar__list {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+}
+.header .navbar__list .list__item:hover {
+  transition: 0.2s;
+  transform: scale(1.1);
+  filter: drop-shadow(0rem 0rem 1.6rem #FA9500);
+}
+.header .navbar__list .list__item:hover .icon {
+  stroke: #FA9500;
+}
+.header .navbar__list .list__item:active {
+  transform: scale(1);
+  filter: none;
+}
+.header .navbar__list .icon {
+  stroke: #7c6a0a;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.header .navbar__list .icon-profile {
+  stroke-width: 0.425rem;
+}
+.header .navbar__list .icon-shopping {
+  stroke-width: 0.3708rem;
+}
+.header .navbar__list .icon-favorite {
+  stroke-width: 0.4083rem;
+}
+
+.hero {
+  display: flex;
+  padding-inline: 3rem;
+  padding-block: 4rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12rem;
+}
+.hero .hero__summary {
+  padding-block: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8rem;
+}
+.hero .hero__summary .summary__text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.hero .hero__summary .summary__text .text__title {
+  color: #7c6a0a;
+  font-size: 6rem;
+}
+.hero .hero__summary .summary__text .text__description {
+  color: #7c6a0a;
+  font-size: 2rem;
+}
+.hero .hero__summary .summary__button {
+  display: flex;
+}
+.hero .hero__summary .summary__button .button__cta {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #FA9500;
+  padding: 1.6rem;
+  border-radius: 4rem;
+}
+.hero .hero__summary .summary__button .button__cta:hover {
+  transition: 0.2s;
+  transform: scale(1.1);
+  color: #ffefe7;
+  background-color: #7c6a0a;
+}
+.hero .hero__image-box {
+  min-width: max(25rem, 30%);
+}
+.hero .hero__image-box .image-box__image {
+  width: 100%;
+}
+
+body {
+  background-color: #ffefe7;
+  font-family: "IBM Plex Sans", sans-serif;
+  padding-inline: 8rem;
+  padding-block: 2rem;
+}
+
+/*# sourceMappingURL=main.css.map */

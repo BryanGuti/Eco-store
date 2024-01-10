@@ -1,0 +1,53 @@
+@use '../variables' as var;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 2rem;
+  align-items: center;
+
+  .logo__link {
+    font-size: 3rem;
+    color: var.$primary-text-color;
+    font-weight: bold;
+  }
+
+  .navbar__list {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+
+    .list__item:hover {
+      transition: .2s;
+      transform: scale(1.1);
+      filter: drop-shadow(0rem 0rem 1.6rem #FA9500);
+
+      .icon {
+        stroke: #FA9500;
+      }
+    }
+
+    .list__item:active {
+      transform: scale(1);
+      filter: none;
+    }
+
+    .icon {
+      stroke: var.$primary-text-color;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .icon-profile {
+      stroke-width: .425rem;
+    }
+
+    .icon-shopping {
+      stroke-width: .3708rem;
+    }
+
+    .icon-favorite {
+      stroke-width: .4083rem;
+    }
+  }
+}

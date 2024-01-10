@@ -1,0 +1,11 @@
+@use './partials/general';
+@use './partials/variables' as var;
+@use './partials/components/header';
+@use './partials/components/hero';
+
+body {
+  background-color: var.$primary-color;;
+  font-family: var.$font-stack;
+  padding-inline: 8rem;
+  padding-block: 2rem;
+}

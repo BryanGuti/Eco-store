@@ -1,0 +1,63 @@
+@use '../variables' as var;
+
+.hero {
+  display:flex;
+  padding-inline: 3rem;
+  padding-block: 4rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12rem;
+
+  .hero__summary {
+    padding-block: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8rem;
+
+    .summary__text {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      .text__title {
+        color: var.$primary-text-color;
+        font-size:6rem;
+      }
+
+      .text__description {
+        color: var.$primary-text-color;
+        font-size: 2rem;
+      }
+    }
+
+    .summary__button {
+      display: flex;
+
+      .button__cta {
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        background-color: #FA9500;
+        padding: 1.6rem;
+        border-radius: 4rem;
+      }
+
+      .button__cta:hover {
+        transition: .2s;
+        transform: scale(1.1);
+        color: var.$primary-color;
+        background-color: var.$primary-text-color;
+      }
+    }
+  }
+
+  .hero__image-box {
+    min-width: max(25rem, 30%);
+
+    .image-box__image {
+      width: 100%;
+    }
+  }
+}

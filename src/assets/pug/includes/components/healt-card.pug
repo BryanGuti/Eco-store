@@ -1,0 +1,9 @@
+mixin article(articleThumb, articleTitle, articleDescription)
+  article(class="products__product")
+    button(class="product__favorite" type="button")
+      include ../../../icons/favorites.svg
+    div(class="product__image-container")
+      img(class="image-container__image" src=articleThumb)
+    div(class="product__description")
+      h3(class="description__title") #{articleTitle}
+      p(class="description__text") #{articleDescription}

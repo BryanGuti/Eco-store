@@ -4,6 +4,7 @@
   display:flex;
   padding-inline: 3rem;
   padding-block: 4rem;
+  height: 100dvh;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -23,12 +24,14 @@
 
       .text__title {
         color: var.$primary-text-color;
-        font-size:6rem;
+        font-size: clamp(4rem, 5dvw, 6rem);
+        text-wrap: nowrap;
       }
 
       .text__description {
         color: var.$primary-text-color;
-        font-size: 2rem;
+        font-size: clamp(1.6rem, 2dvw, 2rem);
+        text-align: justify;
       }
     }
 
@@ -37,7 +40,7 @@
 
       .button__cta {
         color: white;
-        font-size: 2rem;
+        font-size: clamp(1.6rem, 2dvw, 2rem);
         font-weight: bold;
         background-color: #FA9500;
         padding: 1.6rem;
@@ -58,6 +61,37 @@
 
     .image-box__image {
       width: 100%;
+    }
+  }
+}
+
+
+@media (max-width: 1020px) {
+  .hero {
+    position: relative;
+    overflow: hidden;
+    padding-inline: 0;
+
+    &__image-box {
+      position: absolute;
+      z-index: -1;
+      width: 100dvw;
+      scale: 1.5;
+      height: 100dvh;
+      opacity: .6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      filter: brightness(.8);
+    }
+
+    &__summary {
+      align-items: center;
+      padding-inline: 6rem;
+
+      .summary__text {
+        text-align: center;
+      }
     }
   }
 }

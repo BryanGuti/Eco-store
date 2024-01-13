@@ -2,10 +2,18 @@
 @use './partials/variables' as var;
 @use './partials/components/header';
 @use './partials/components/hero';
+@use './partials/components/healt';
 
 body {
   background-color: var.$primary-color;;
   font-family: var.$font-stack;
   padding-inline: 8rem;
-  padding-block: 2rem;
+  // padding-block: 2rem;
+  // position: relative;
+}
+
+@media (max-width: 1020px) {
+  body {
+    padding-inline: 0;
+  }
 }
